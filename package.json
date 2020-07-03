@@ -21,8 +21,7 @@
   },
   "devDependencies": {
     "husky": "^4.2.5",
-    "lint-staged": "^10.2.11",
-    "synp": "^1.7.0"
+    "lint-staged": "^10.2.11"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -54,10 +53,6 @@
   "lint-staged": {
     "src/**/*.{ts,tsx}": [
       "yarn test --watchAll=false --passWithNoTests"
-    ],
-    "package.json": [
-      "yarn synp -f --source-file yarn.lock",
-      "git add package-lock.json"
     ]
   }
 }
